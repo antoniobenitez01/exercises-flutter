@@ -27,33 +27,30 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  
   int _selectedIndex = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  static const TextStyle optionStyle =
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-  void _setCounter(int counter){
-    _counter = counter;
-  }
+  static const List<Widget> _widgetOptions = <Widget>[
+    Text(
+      'HOME PAGE',
+      style: optionStyle,
+    ),
+    Text(
+      'COURSE PAGE',
+      style: optionStyle,
+    ),
+    Text(
+      'CONTACT GFG',
+      style: optionStyle,
+    ),
+  ];
 
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
-      switch(index){
-        case 0:
-          _setCounter(0);
-          break;
-        case 1:
-          _incrementCounter();
-          break;
-        case 2:
-          _setCounter(_counter + 100);
-          break;
-      }
     });
   }
 
@@ -65,34 +62,25 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.loop),
-            label: 'Reset',
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: 'Add',
+            icon: Icon(Icons.bookmark),
+            label: 'Courses',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.star),
-            label: '+100',
+            icon: Icon(Icons.contact_mail),
+            label: 'Mail',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromARGB(255, 255, 0, 157),
+        selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );
