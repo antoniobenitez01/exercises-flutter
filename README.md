@@ -29,9 +29,9 @@ ______________________________________________________________________________<b
         <tr> <td>6</td> <td>App Bottom Navigation Bar 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>7</td> <td>App Bottom Navigation Bar 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>8</td> <td>Mi App Bottom Navigation Bar</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>9</td> <td>Drawer 1</td> <td>:x:</td> </tr>
+        <tr> <td>9</td> <td>Drawer 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>10</td> <td>Drawer 2</td> <td>:x:</td> </tr>
-        <tr> <td>11</td> <td>Mi Drawer</td> <td>:x:</td> </tr>
+        <tr> <td>11</td> <td>Mi Drawer</td> <td>:white_check_mark:</td> </tr>
       </table>
     </td>
   </table>
