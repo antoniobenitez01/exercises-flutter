@@ -25,7 +25,7 @@ ______________________________________________________________________________<b
         <tr> <td>2</td> <td>AppBar 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>3</td> <td>AppBar 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>4</td> <td>AppBar 3</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>5</td> <td>Mi AppBar</td> <td>:x:</td> </tr>
+        <tr> <td>5</td> <td>Mi AppBar</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>6</td> <td>App Bottom Navigation Bar 1</td> <td>:x:</td> </tr>
         <tr> <td>7</td> <td>App Bottom Navigation Bar 2</td> <td>:x:</td> </tr>
         <tr> <td>8</td> <td>Mi App Bottom Navigation Bar</td> <td>:x:</td> </tr>
