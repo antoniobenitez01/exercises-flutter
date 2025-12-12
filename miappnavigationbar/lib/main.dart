@@ -10,11 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      title: 'My App Bottom Navigation Bar',
+      home: const MyHomePage(title: 'My App Bottom Navigation Bar'),
     );
   }
 }
@@ -30,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int _selectedIndex = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -37,12 +36,37 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _setCounter(int counter){
+    _counter = counter;
+  }
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+      switch(index){
+        case 0:
+          _setCounter(0);
+          break;
+        case 1:
+          _incrementCounter();
+          break;
+        case 2:
+          _setCounter(_counter + 100);
+          break;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Colors.amber,
+        title: Text(widget.title,
+          style: TextStyle(
+            fontWeight: .bold
+          )
+        ),
       ),
       body: Center(
         child: Column(
@@ -56,10 +80,28 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      bottomNavigationBar: BottomNavigationBar(
+        iconSize: 50,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        backgroundColor: Colors.amber,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.loop),
+            label: 'Reset',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add),
+            label: 'Add',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: '+100',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: const Color.fromARGB(255, 255, 0, 157),
+        onTap: _onItemTapped,
       ),
     );
   }
