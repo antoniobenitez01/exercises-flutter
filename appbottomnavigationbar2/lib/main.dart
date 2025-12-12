@@ -29,11 +29,27 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
+  int _selectedIndex = 0;
+
+  static const List<Widget> _pages = <Widget>[
+    Icon(
+      Icons.call,
+      size: 150,
+    ),
+    Icon(
+      Icons.camera,
+      size: 150,
+    ),
+    Icon(
+      Icons.chat,
+      size: 150,
+    ),
+  ];
+
+  void _onItemTapped(int index) {
     setState(() {
-      _counter++;
+      _selectedIndex = index;
     });
   }
 
@@ -45,21 +61,40 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+        child: _pages.elementAt(_selectedIndex), //New
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
+        unselectedIconTheme: IconThemeData(
+          color: Colors.deepOrangeAccent,
+        ),
+        unselectedItemColor: Colors.deepOrangeAccent,
+        selectedFontSize: 20,
+        selectedIconTheme: IconThemeData(color: Colors.amberAccent),
+        selectedItemColor: Colors.amberAccent,
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+        mouseCursor: SystemMouseCursors.grab,
+        iconSize: 40,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        backgroundColor: Colors.white10,
+        elevation: 0,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.call),
+            label: 'Calls',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.camera),
+            label: 'Camera',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Chats',
+          ),
+        ],
+        currentIndex: _selectedIndex, //New
+        onTap: _onItemTapped,
       ),
     );
   }
