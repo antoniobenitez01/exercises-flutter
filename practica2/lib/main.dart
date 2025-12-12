@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           )
         ),
       ),
-      home: const MyHomePage(title: 'Práctica 2 Flutter'),
+      home: const MyHomePage(title: 'Práctica 2 - Ejercicio 1'),
     );
   }
 }
@@ -85,8 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
-      if (index == 1) {
+      if (index == 0){
+        _resetCounter();
+      }else if (index == 1) {
         _incrementCounter();
+      }else if (index == 2){
+        _setCounter(_counter + 100);
       }
     });
   }
@@ -195,9 +199,9 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.loop), label: 'Reset'),
           BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home')
+          BottomNavigationBarItem(icon: Icon(Icons.star), label: '+100')
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.pink,
