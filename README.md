@@ -40,14 +40,14 @@ ______________________________________________________________________________<b
       <table> <!-- RELACIÓN 3                                                         -->
         <tr> <th colspan="3"> Práctica Flutter Nº3 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
-        <tr> <td>1</td> <td>floatingActionButton 1</td> <td>:x:</td> </tr>
-        <tr> <td>2</td> <td>bottomSheetModal</td> <td>:x:</td> </tr>
-        <tr> <td>3</td> <td>bottomSheetPersistent</td> <td>:x:</td> </tr>
-        <tr> <td>4</td> <td>Row 1</td> <td>:x:</td> </tr>
-        <tr> <td>5</td> <td>Column 1</td> <td>:x:</td> </tr>
-        <tr> <td>6</td> <td>Row and Column 1</td> <td>:x:</td> </tr>
-        <tr> <td>7</td> <td>Stack</td> <td>:x:</td> </tr>
-        <tr> <td>8</td> <td>ListView</td> <td>:x:</td> </tr>
+        <tr> <td>1</td> <td>floatingActionButton 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>2</td> <td>bottomSheetModal</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>3</td> <td>bottomSheetPersistent</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>4</td> <td>Row 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>5</td> <td>Column 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>6</td> <td>Row and Column 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>7</td> <td>Stack</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>8</td> <td>ListView</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>9</td> <td>Navegando entre Pantallas</td> <td>:x:</td> </tr>
         <tr> <td>10</td> <td>GridView</td> <td>:x:</td> </tr>
       </table>
