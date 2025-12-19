@@ -48,8 +48,8 @@ ______________________________________________________________________________<b
         <tr> <td>6</td> <td>Row and Column 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>7</td> <td>Stack</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>8</td> <td>ListView</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>9</td> <td>Navegando entre Pantallas</td> <td>:x:</td> </tr>
-        <tr> <td>10</td> <td>GridView</td> <td>:x:</td> </tr>
+        <tr> <td>9</td> <td>Navegando entre Pantallas</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>10</td> <td>GridView</td> <td>:white_check_mark:</td> </tr>
       </table>
     </td>
   </table>
