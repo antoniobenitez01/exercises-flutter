@@ -4,17 +4,13 @@ Widget createDrawerHeader() {
  return DrawerHeader(
      margin: EdgeInsets.zero,
      padding: EdgeInsets.zero,
-     decoration: BoxDecoration(
-         image: DecorationImage(
-             fit: BoxFit.fill,
-             image:  AssetImage('images/bg_header.jpeg'))),
      child: Stack(children: <Widget>[
        Positioned(
            bottom: 12.0,
            left: 16.0,
-           child: Text("Welcome to Flutter",
+           child: Text("Navegando Pantallas",
                style: TextStyle(
-                   color: Colors.white,
+                   color: const Color.fromARGB(255, 0, 0, 0),
                    fontSize: 20.0,
                    fontWeight: FontWeight.w500))),
      ]));

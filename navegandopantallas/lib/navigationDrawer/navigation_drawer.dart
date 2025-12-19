@@ -20,34 +20,23 @@ class NewNavigationDrawer extends StatelessWidget {
                Navigator.pushReplacementNamed(context, PageRoutes.home),
          ),
          createDrawerBodyItem(
-           icon: Icons.account_circle,
-           text: 'Profile',
+           icon: Icons.table_rows,
+           text: 'Row',
            onTap: () =>
-               Navigator.pushReplacementNamed(context, PageRoutes.profile),
+               Navigator.pushReplacementNamed(context, PageRoutes.row),
+         ),
+         createDrawerBodyItem(
+           icon: Icons.view_column,
+           text: 'Column',
+           onTap: () =>
+               Navigator.pushReplacementNamed(context, PageRoutes.column),
          ),
 
          createDrawerBodyItem(
-           icon: Icons.event_note,
-           text: 'Events',
+           icon: Icons.table_chart,
+           text: 'Row & Column',
            onTap: () =>
-               Navigator.pushReplacementNamed(context, PageRoutes.event),
-         ),
-         Divider(),
-         createDrawerBodyItem(
-           icon: Icons.notifications_active,
-           text: 'Notifications',
-           onTap: () =>
-               Navigator.pushReplacementNamed(context, PageRoutes.notification),
-         ),
-         createDrawerBodyItem(
-           icon: Icons.contact_phone,
-           text: 'Contact Info',
-           onTap: () =>
-               Navigator.pushReplacementNamed(context, PageRoutes.contact),
-         ),
-         ListTile(
-           title: Text('App version 1.0.0'),
-           onTap: () {},
+               Navigator.pushReplacementNamed(context, PageRoutes.rowcolumn),
          ),
        ],
      ),
