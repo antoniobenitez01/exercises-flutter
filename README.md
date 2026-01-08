@@ -56,7 +56,7 @@ ______________________________________________________________________________<b
       <table> <!-- RELACIÓN 3                                                         -->
         <tr> <th colspan="3"> Práctica Flutter Nº4 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
-        <tr> <td>1</td> <td>RichText 1</td> <td>:x:</td> </tr>
+        <tr> <td>1</td> <td>RichText 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>2</td> <td>RichText 2</td> <td>:x:</td> </tr>
         <tr> <td>3</td> <td>Image Widgets</td> <td>:x:</td> </tr>
         <tr> <td>4</td> <td>Tabs</td> <td>:x:</td> </tr>
