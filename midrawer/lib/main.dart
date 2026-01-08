@@ -38,6 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
           color: Colors.white
         ),
       ),
+      body: Center(
+        child: Text("Hola Mundo!")
+      ),
       drawer: Drawer(
         backgroundColor: Colors.blue,
         child: ListView(
