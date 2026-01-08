@@ -52,5 +52,23 @@ ______________________________________________________________________________<b
         <tr> <td>10</td> <td>GridView</td> <td>:white_check_mark:</td> </tr>
       </table>
     </td>
+    <td valign="top">
+      <table> <!-- RELACIÓN 3                                                         -->
+        <tr> <th colspan="3"> Práctica Flutter Nº4 </th> </tr>
+        <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
+        <tr> <td>1</td> <td>RichText 1</td> <td>:x:</td> </tr>
+        <tr> <td>2</td> <td>RichText 2</td> <td>:x:</td> </tr>
+        <tr> <td>3</td> <td>Image Widgets</td> <td>:x:</td> </tr>
+        <tr> <td>4</td> <td>Tabs</td> <td>:x:</td> </tr>
+        <tr> <td>5</td> <td>YouTube Video</td> <td>:x:</td> </tr>
+        <tr> <td>6</td> <td>Buttons</td> <td>:x:</td> </tr>
+        <tr> <td>7</td> <td>Widget Card</td> <td>:x:</td> </tr>
+        <tr> <td>8</td> <td>Card Gallery</td> <td>:x:</td> </tr>
+        <tr> <td>9</td> <td>GridView</td> <td>:x:</td> </tr>
+        <tr> <td>10</td> <td>App Project Nº1</td> <td>:x:</td> </tr>
+        <tr> <td>11</td> <td>App Project Nº2</td> <td>:x:</td> </tr>
+        <tr> <td>12</td> <td>App Project Nº3</td> <td>:x:</td> </tr>
+      </table>
+    </td>
   </table>
 </div>
