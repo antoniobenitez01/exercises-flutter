@@ -58,8 +58,8 @@ ______________________________________________________________________________<b
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
         <tr> <td>1</td> <td>RichText 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>2</td> <td>RichText 2</td> <td>:x:</td> </tr>
-        <tr> <td>3</td> <td>Image Widgets</td> <td>:x:</td> </tr>
-        <tr> <td>4</td> <td>Tabs</td> <td>:x:</td> </tr>
+        <tr> <td>3</td> <td>Image Widgets</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>4</td> <td>Tabs</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>5</td> <td>YouTube Video</td> <td>:x:</td> </tr>
         <tr> <td>6</td> <td>Buttons</td> <td>:x:</td> </tr>
         <tr> <td>7</td> <td>Widget Card</td> <td>:x:</td> </tr>
