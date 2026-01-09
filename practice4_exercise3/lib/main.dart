@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -30,8 +29,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  int _selectedIndex = 0;
   double sideLength = 150;
+  
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,9 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
         toolbarHeight: 70,
         leading: Padding(
           padding: .only(left: 24),
-          child: CircleAvatar(
-            child: Icon(Icons.abc),
-          )
+          child: Icon(
+            Icons.home,
+            shadows: [Shadow(color: Colors.white, offset: .new(2, 2))],
+            )
         ),
         backgroundColor: Colors.amber,
         title: Text(widget.title, style: TextStyle(fontWeight: .bold)),
@@ -54,19 +60,11 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: .center,
           spacing: 10,
           children:[
-            InkWell(
-              onHover: (isHovering){
-                if(isHovering){
-
-                }else{
-                }
-              },
-              child: Container(
-                width: sideLength,
-                height: sideLength,
-                decoration: BoxDecoration(border:Border.all(color: Colors.blueGrey)),
-                child: Image(image: AssetImage("assets/ena.png")),
-              ),
+            Container(
+              width: sideLength,
+              height: sideLength,
+              decoration: BoxDecoration(border:Border.all(color: Colors.blueGrey)),
+              child: Image(image: AssetImage("assets/ena.png")),
             ),
             Container(
               width: sideLength,
@@ -89,7 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.flutter), label: ""),
           BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.android), label: ""),
           BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.dartLang), label: "")
-        ]
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.amber[800],
+        onTap: _onItemTapped,
       ),
     );
   }
