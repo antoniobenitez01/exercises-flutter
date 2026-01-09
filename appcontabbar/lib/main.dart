@@ -1,5 +1,7 @@
+import 'package:appcontabbar/widget_favourites.dart';
 import 'package:appcontabbar/widget_home.dart';
 import 'package:appcontabbar/widget_message.dart';
+import 'package:appcontabbar/widget_settings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -54,8 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           WidgetHome(),
           WidgetMessages(),
-          Center(child: Text("Favourites Content")),
-          Center(child: Text("Settings Content"))
+          WidgetFavourites(),
+          WidgetSettings()
         ]
       )
     );

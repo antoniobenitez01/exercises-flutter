@@ -25,7 +25,7 @@ class _WidgetHomeState extends State<WidgetHome> {
         crossAxisAlignment: .center,
         children:[
           Text("WELCOME TO HOME!", style:TextStyle(fontSize: 30, fontWeight: .bold)),
-          Text("Press the Button!"),
+          Text("Click the number below!"),
           SizedBox(height:30),
           InkWell(
             borderRadius: BorderRadius.circular(50),

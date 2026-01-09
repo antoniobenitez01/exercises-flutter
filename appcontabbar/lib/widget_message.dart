@@ -10,17 +10,23 @@ class WidgetMessages extends StatefulWidget {
 class _WidgetMessagesState extends State<WidgetMessages> {
 
   List<String> messages = [
-    "Este es el Mensaje 1",
-    "Este es el Mensaje 2",
-    "Este es el Mensaje 3",
-    "Este es el Mensaje 4",
-    "Este es el Mensaje 5",
-    "Este es el Mensaje 6",
-    "Este es el Mensaje 7",
-    "Este es el Mensaje 8",
-    "Este es el Mensaje 9 ",
-    "Este es el Mensaje 10",
+    "This is Message 1",
+    "This is Message 2",
+    "This is Message 3",
+    "This is Message 4",
+    "This is Message 5",
+    "This is Message 6",
+    "This is Message 7",
+    "This is Message 8",
+    "This is Message 9 ",
+    "This is Message 10",
   ];
+
+  void _addMessage(){
+    setState((){
+      messages.add("This is Message ${messages.length+1}");
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +45,7 @@ class _WidgetMessagesState extends State<WidgetMessages> {
               children: [
                 Icon(Icons.message, color: Colors.white),
                 SizedBox(width:10),
-                Text("LISTA DE MENSAJES",style: TextStyle(
+                Text("MESSAGES LIST",style: TextStyle(
                   fontWeight: .bold,
                   color: Colors.white
                 ))
@@ -48,8 +54,17 @@ class _WidgetMessagesState extends State<WidgetMessages> {
           ),
           Container(
             margin: .all(5),
-            height: 650,
+            height: 550,
             decoration: BoxDecoration(
+              border:.symmetric(horizontal:BorderSide(
+                  color: const Color.fromARGB(255, 110, 92, 126),
+                  width: 10
+                ),
+                vertical: BorderSide(
+                  color: const Color.fromARGB(255, 110, 92, 126),
+                  width: 10
+                )
+              ),
               borderRadius: .all(.circular(10)),
               color: const Color.fromARGB(255, 110, 92, 126),
             ),
@@ -66,14 +81,32 @@ class _WidgetMessagesState extends State<WidgetMessages> {
                   ),
                   clipBehavior: Clip.antiAlias,
                   child: ListTile(
-                    title: Text('Mensaje ${index + 1}', style: TextStyle(fontWeight: .bold)),
+                    title: Text('MESSAGE ${index + 1}', style: TextStyle(fontWeight: .bold)),
                     subtitle: Text(messages[index]),
                   )
                 );
               },
               separatorBuilder: (context, index) => SizedBox( height: 10 ),
             )
-          )
+          ),
+          SizedBox(height:10),
+          InkWell(
+            borderRadius: BorderRadius.circular(10),
+            onTap:(){
+              _addMessage();
+            },
+            child: Ink(
+              height: 75,
+              width:  375,
+              decoration:BoxDecoration(
+                border: Border.all(color: const Color.fromARGB(255, 110, 92, 126), width: 5),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Center(child: Text('ADD NEW MESSAGE', style: TextStyle(
+                fontSize: 20,
+                fontWeight: .bold)),)
+            )
+          ),
         ]
       )
     );
