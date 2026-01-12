@@ -61,7 +61,7 @@ ______________________________________________________________________________<b
         <tr> <td>3</td> <td>Image Widgets</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>4</td> <td>Tabs</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>5</td> <td>YouTube Video</td> <td>:x:</td> </tr>
-        <tr> <td>6</td> <td>Buttons</td> <td>:x:</td> </tr>
+        <tr> <td>6</td> <td>Material Buttons</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>7</td> <td>Widget Card</td> <td>:x:</td> </tr>
         <tr> <td>8</td> <td>Card Gallery</td> <td>:x:</td> </tr>
         <tr> <td>9</td> <td>GridView</td> <td>:x:</td> </tr>
