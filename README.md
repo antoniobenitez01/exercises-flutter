@@ -57,12 +57,12 @@ ______________________________________________________________________________<b
         <tr> <th colspan="3"> Práctica Flutter Nº4 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
         <tr> <td>1</td> <td>RichText 1</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>2</td> <td>RichText 2</td> <td>:x:</td> </tr>
+        <tr> <td>2</td> <td>RichText 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>3</td> <td>Image Widgets</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>4</td> <td>Tabs</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>5</td> <td>YouTube Video</td> <td>:x:</td> </tr>
         <tr> <td>6</td> <td>Material Buttons</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>7</td> <td>Widget Card</td> <td>:x:</td> </tr>
+        <tr> <td>7</td> <td>Widget Card</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>8</td> <td>Card Gallery</td> <td>:x:</td> </tr>
         <tr> <td>9</td> <td>GridView</td> <td>:x:</td> </tr>
         <tr> <td>10</td> <td>App Project Nº1</td> <td>:x:</td> </tr>
