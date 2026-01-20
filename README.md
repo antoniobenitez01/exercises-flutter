@@ -76,8 +76,8 @@ ______________________________________________________________________________<b
       <table> <!-- RELACIÓN 5                                                        -->
         <tr> <th colspan="3"> Práctica Flutter Nº5 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
-        <tr> <td>1</td> <td>MaterialApp Widget</td> <td>:x:</td> </tr>
-        <tr> <td>2</td> <td>Material Themes</td> <td>:x:</td> </tr>
+        <tr> <td>1</td> <td>MaterialApp Widget</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>2</td> <td>Material Themes</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>3</td> <td>Cupertino 1</td> <td>:x:</td> </tr>
         <tr> <td>4</td> <td>Cupertino 2</td> <td>:x:</td> </tr>
         <tr> <td>5</td> <td>Material & Cupertino</td> <td>:x:</td> </tr>

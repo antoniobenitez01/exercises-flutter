@@ -21,6 +21,7 @@ class _MyAppState extends State<MyApp> {
   ));
 
   ThemeMode _themeMode = ThemeMode.system;
+  IconData _leadingIcon = Icons.light_mode;
 
   @override
   Widget build(BuildContext context) {
@@ -32,24 +33,37 @@ class _MyAppState extends State<MyApp> {
       darkTheme: customTheme.dark(),
       themeMode: _themeMode,
       home: Scaffold(
+        appBar: AppBar(
+          leading: Icon(_leadingIcon),
+          title: Text("Práctica 5 - Ejercicio 2")
+        ),
         body: Center(
           child: Column(
+            mainAxisAlignment: .center,
             children: [
-              TextButton(
-                child: Text("Light"),
-                onPressed: () {
-                  setState((){
-                    _themeMode = ThemeMode.light;
-                  });
-                },
-              ),
-              TextButton(
-                child: Text("Dark"),
-                onPressed: () {
-                  setState((){
-                    _themeMode = ThemeMode.dark;
-                  });
-                },
+              Text("Change the Theme !"),
+              Row(
+                mainAxisAlignment: .center,
+                children: [
+                  TextButton(
+                    child: Text("Light"),
+                    onPressed: () {
+                      setState((){
+                        _themeMode = ThemeMode.light;
+                        _leadingIcon = Icons.light_mode;
+                      });
+                    },
+                  ),
+                  TextButton(
+                    child: Text("Dark"),
+                    onPressed: () {
+                      setState((){
+                        _themeMode = ThemeMode.dark;
+                        _leadingIcon = Icons.dark_mode;
+                      });
+                    },
+                  )
+                ]
               )
             ]
           )
