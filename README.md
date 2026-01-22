@@ -83,10 +83,10 @@ ______________________________________________________________________________<b
         <tr> <td>5</td> <td>Material & Cupertino</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>6</td> <td>Dartpad Sunflower 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>7</td> <td>Dartpad Sunflower 2</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>8</td> <td>Flutter Animations</td> <td>:x:</td> </tr>
-        <tr> <td>9</td> <td>Flutter Layout</td> <td>:x:</td> </tr>
-        <tr> <td>10</td> <td>App Aesthetic</td> <td>:x:</td> </tr>
-        <tr> <td>11</td> <td>Material Design 3</td> <td>:x:</td> </tr>
+        <tr> <td>8</td> <td>Flutter Animations</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>9</td> <td>Flutter Layout</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>10</td> <td>App Aesthetic</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>11</td> <td>Animated Responsive</td> <td>:white_check_mark:</td> </tr>
       </table>
     </td>
   </table>
