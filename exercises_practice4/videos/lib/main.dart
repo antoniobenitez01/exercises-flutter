@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:vimeo_video_player/vimeo_video_player.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+
+final youtubeId = YoutubePlayer.convertUrlToId("https://youtu.be/dQw4w9WgXcQ?si=-3dPoarEPOXmUkQF");
+final vimeoId = "303380455";
 
 void main() {
   runApp(const MyApp());
@@ -29,27 +34,80 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final _controller = YoutubePlayerController();
+  
+  late final YoutubePlayerController _controller = YoutubePlayerController(
+    initialVideoId: youtubeId!,
+    flags : const YoutubePlayerFlags(
+      autoPlay : false,
+      mute : true
+    ),
+  );
+  bool isVideoLoading = true; 
+  InAppWebViewController? webViewController;
+
   @override
-  void initState() {
-    super.initState();
-    // TO load a video by its unique id
-    _controller.loadVideoById(videoId: "KGD-T3bhFEA");
+  void dispose() {
+    super.dispose();
+    webViewController?.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Center(
-          // Youtube player as widget
-          child: YoutubePlayer(
-            controller: _controller, // Controler that we created earlier
-            aspectRatio: 16 / 9,      // Aspect ratio you want to take in screen
-          ),
-        ),
+      appBar: AppBar(
+        title: Text("Vídeos de Youtube y Vimeo", style: TextStyle(color: Colors.white, fontWeight: .bold)),
+        backgroundColor: Colors.red,
       ),
+      body: Padding(
+        padding: .all(20),
+        child: SafeArea(
+          child: ListView(
+            children:[
+              AspectRatio(
+                aspectRatio: 16 / 9,
+                child: YoutubePlayer(controller: _controller)
+              ),
+              SizedBox(height:20),
+              AspectRatio(
+                aspectRatio: 16 / 9,
+                child: VimeoVideoPlayer(
+                  videoId: vimeoId,
+                  isAutoPlay: false,
+                  onInAppWebViewCreated: (controller) {
+                    webViewController = controller;
+                  },
+                  onReady: () {
+                    setState(() {
+                      isVideoLoading = false;
+                    });
+                  },
+                  onInAppWebViewLoadStart: (controller, url) {
+                    setState(() {
+                      isVideoLoading = true;
+                    });
+                  },
+                  onInAppWebViewLoadStop: (controller, url) {
+                    setState(() {
+                      isVideoLoading = false;
+                    });
+                  },
+                ),
+              ),
+            ]
+          ),
+        )
+      )
     );
   }
+}
+
+Widget thumbnail(){
+  return Container(
+    height: 200,
+    margin: const EdgeInsets.all(10),
+    color: Colors.red,
+    child: const Center(
+      child: Text("Thumbnail")
+    )
+  );
 }
