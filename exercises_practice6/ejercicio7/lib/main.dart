@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {                          // Widget raíz, 
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(                                        // Widget para aplicaciones Material Design
+    return MaterialApp(     
+      debugShowCheckedModeBanner: false,                                   // Widget para aplicaciones Material Design
       title: 'Flutter Demo',                                   // Título de la app
       theme: ThemeData(                                        // Tema de la aplicación
         primarySwatch: Colors.blue,                            // Color primario
