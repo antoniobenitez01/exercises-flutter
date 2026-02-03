@@ -95,14 +95,14 @@ ______________________________________________________________________________<b
       <table> <!-- RELACIÓN 6                                                        -->
         <tr> <th colspan="3"> Práctica Flutter Nº6 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
-        <tr> <td>1</td> <td>Navigation</td> <td>:x:</td> </tr>
-        <tr> <td>2</td> <td>Navegación Pantallas 1</td> <td>:x:</td> </tr>
-        <tr> <td>3</td> <td>Navegación Pantallas 2</td> <td>:x:</td> </tr>
-        <tr> <td>4</td> <td>Navegación Pantallas 3</td> <td>:x:</td> </tr>
-        <tr> <td>5</td> <td>Gestures 1</td> <td>:x:</td> </tr>
-        <tr> <td>6</td> <td>Gestures 2</td> <td>:x:</td> </tr>
-        <tr> <td>7</td> <td>SetState</td> <td>:x:</td> </tr>
-        <tr> <td>8</td> <td>Provider 1</td> <td>:x:</td> </tr>
+        <tr> <td>1</td> <td>Navigation</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>2</td> <td>Navegación Pantallas 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>3</td> <td>Navegación Pantallas 2</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>4</td> <td>Navegación Pantallas 3</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>5</td> <td>Gestures 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>6</td> <td>Gestures 2</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>7</td> <td>SetState</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>8</td> <td>Provider 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>9</td> <td>Provider 2</td> <td>:x:</td> </tr>
         <tr> <td>10</td> <td>Riverpod</td> <td>:x:</td> </tr>
         <tr> <td>11</td> <td>Animated Responsive</td> <td>:x:</td> </tr>
