@@ -105,7 +105,7 @@ ______________________________________________________________________________<b
         <tr> <td>8</td> <td>Provider 1</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>9</td> <td>Provider 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>10</td> <td>Riverpod</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>12</td> <td>Home Page Widget</td> <td>:x:</td> </tr>
+        <tr> <td>12</td> <td>Home Page Widget</td> <td>:white_check_mark:</td> </tr>
       </table>
     </td>
   </table>
@@ -115,7 +115,7 @@ ______________________________________________________________________________<b
       <table> <!-- RELACIÓN 7                                                        -->
         <tr> <th colspan="3"> Práctica Flutter Nº7 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
-        <tr> <td>1</td> <td>Formulario Login</td> <td>:x:</td> </tr>
+        <tr> <td>1</td> <td>Formulario Login</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>2</td> <td>Formularios 1</td> <td>:x:</td> </tr>
         <tr> <td>3</td> <td>Formularios 2</td> <td>:x:</td> </tr>
         <tr> <td>4</td> <td>Formularios 3</td> <td>:x:</td> </tr>
