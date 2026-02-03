@@ -103,9 +103,9 @@ ______________________________________________________________________________<b
         <tr> <td>6</td> <td>Gestures 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>7</td> <td>SetState</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>8</td> <td>Provider 1</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>9</td> <td>Provider 2</td> <td>:x:</td> </tr>
-        <tr> <td>10</td> <td>Riverpod</td> <td>:x:</td> </tr>
-        <tr> <td>11</td> <td>Animated Responsive</td> <td>:x:</td> </tr>
+        <tr> <td>9</td> <td>Provider 2</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>10</td> <td>Riverpod</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>12</td> <td>Home Page Widget</td> <td>:x:</td> </tr>
       </table>
     </td>
   </table>
