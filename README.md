@@ -116,10 +116,10 @@ ______________________________________________________________________________<b
         <tr> <th colspan="3"> Práctica Flutter Nº7 </th> </tr>
         <tr> <th>Nº</th> <th>Descripción</th> <th></th> </tr>
         <tr> <td>1</td> <td>Formulario Login</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>2</td> <td>Formularios 1</td> <td>:x:</td> </tr>
-        <tr> <td>3</td> <td>Formularios 2</td> <td>:x:</td> </tr>
-        <tr> <td>4</td> <td>Formularios 3</td> <td>:x:</td> </tr>
-        <tr> <td>5</td> <td>Formularios Cupertino</td> <td>:x:</td> </tr>
+        <tr> <td>2</td> <td>Formularios 1</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>3</td> <td>Formularios 2</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>4</td> <td>Formularios 3</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>5</td> <td>Formularios Cupertino</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>6</td> <td>Form Widgets</td> <td>:x:</td> </tr>
         <tr> <td>7</td> <td>Form Widgets Cupertino</td> <td>:x:</td> </tr>
         <tr> <td>8</td> <td>Firebase</td> <td>:x:</td> </tr>
