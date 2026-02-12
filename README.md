@@ -120,8 +120,8 @@ ______________________________________________________________________________<b
         <tr> <td>3</td> <td>Formularios 2</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>4</td> <td>Formularios 3</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>5</td> <td>Formularios Cupertino</td> <td>:white_check_mark:</td> </tr>
-        <tr> <td>6</td> <td>Form Widgets</td> <td>:x:</td> </tr>
-        <tr> <td>7</td> <td>Form Widgets Cupertino</td> <td>:x:</td> </tr>
+        <tr> <td>6</td> <td>Form Widgets</td> <td>:white_check_mark:</td> </tr>
+        <tr> <td>7</td> <td>Form Widgets Cupertino</td> <td>:white_check_mark:</td> </tr>
         <tr> <td>8</td> <td>Firebase</td> <td>:x:</td> </tr>
         <tr> <td>9</td> <td>Firebase CRUD</td> <td>:x:</td> </tr>
         <tr> <td>10</td> <td>API</td> <td>:x:</td> </tr>
