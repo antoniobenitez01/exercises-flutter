@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853184952274",
+    "project_id": "fluttercrud-1cd1b",
+    "storage_bucket": "fluttercrud-1cd1b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853184952274:android:a479707255abfbeb3e3a0b",
+        "android_client_info": {
+          "package_name": "com.example.ejercicio9"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKJBNWYbg8pepgtCcVtoUy4p1n8f5ssBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
